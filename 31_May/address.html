@@ -2,7 +2,7 @@
     // const name1 = "Sushil" 
     // const name2 = "Sushil"
 
-     function add(x,y)
+     function add(x=230,y=230)
      {
         if(!x || !y)
         {
@@ -12,5 +12,33 @@
         return x+y
      }
      console.log(add(add(124,124),add(124,124))) //output is 496
-     console.log(add())//500
+     console.log(add()) 
+     console.log(add(true,true))
+     console.log(add(true,false))
+     console.log(add(false,false))
+     console.log(add(false,true))
+
+
+     const gender ="male"
+
+     const student={
+       ' first-name':'Sushil',
+       lastname:'Chaudhary',
+       male:"female"
+     }
+
+     console.log(student[gender]);  //output is female
+      console.log(student.lastname) //output : Chaudhary
+      console.log(student[" first-name"]) //output is Sushil
+
+
+   //   const obj={
+   //      age:20
+   //   }
+
+
+
+   //  Object.setPrototypeOf(obj,student)
+
+   //   console.log(obj.name);
 </script>
