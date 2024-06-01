@@ -1,0 +1,27 @@
+<script>
+    //Object.seal() method prevents from addition and deletion of items from object but applies modification in existing properties
+
+    
+    const user={
+        name:'Sushil Chaudhary',
+        age:20,
+        country:'Nepal',
+        city:'Mahendranagar'
+    }
+    Object.seal(user)
+
+    //adding items in object user ------ will not applied
+    user.district='Kanchanpur'
+    user.continent='Asia'
+
+    //deletion items from object user ------ will not applied
+    delete user.name
+    delete user.city
+
+    //modification of items in object  user --- will be applied
+    user.name='Krishna Chaudhary'
+    user.age=22
+    user.country='India'
+    user.city='Bangalore'
+
+</script>

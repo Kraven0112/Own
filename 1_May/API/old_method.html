@@ -1,0 +1,24 @@
+<html>
+    <h1 id="datail">
+
+    </h1>
+</html>
+<script >
+    // debugger
+    //creating promise
+  async function getApi()
+  {
+    const promise1 = await fetch('https://api.bigdatacloud.net/data/reverse-geocode-client')
+
+.then(link1=>{
+    const data = link1.json()
+    return data
+    console.log(data)
+})
+.then(link2=>{
+    data1=link2
+     console.log(data1)
+})
+  }
+ getApi()
+</script>

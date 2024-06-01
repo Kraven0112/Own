@@ -1,0 +1,29 @@
+<script>
+    // Object.freeze() method  helps to prevent from addition,deletion and modification
+
+    const animals ={
+        name:'Cat',
+        color:'white',
+        age:5
+    }
+    Object.freeze(animals)
+
+    //these changes will never applied in object because of Object.freeze() method
+
+    //modification ------- will not applied
+    animals.name="Dog"
+    animals.age=4
+    animals.color="Gray"
+
+    // addition -------- will not applied
+    animals.weight=5
+    animals.bread='pitbull'
+
+    //deletion --------- will not applied 
+    delete animals.name
+    delete animals.color
+    delete animals.age
+
+
+    console.log(animals)
+</script>
