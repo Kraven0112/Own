@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+.star-1{
+    width: 130px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    animation: 1s star infinite linear;
+    background-color: transparent;
+}
+.star-2{
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    animation: 2s star infinite linear;
+    background-color: transparent;
+}
+.star-3{
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    animation: 2s star infinite linear;
+    background-color: transparent;
+}
+.star-4{
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    animation: 2s star infinite linear;
+    background-color: transparent;
+}
+.star-5{
+    width: 200px;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    animation: 2s star infinite linear;
+    background-color: transparent;
+}
+
+@keyframes star{
+    0%{rotate: 360deg;}
+}
