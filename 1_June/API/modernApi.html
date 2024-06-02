@@ -1,0 +1,34 @@
+<html>
+    <h1  id="country"></h1>
+</html>
+<script>
+    const country = document.getElementById('country')
+
+    const promise1 ='https://api.bigdatacloud.net/data/reverse-geocode-client'
+
+    async function getApi()
+    {
+      try{
+        const data = await fetch(promise1)
+        const actualData = await data.json()
+        return actualData
+      }
+      catch(err)
+      {
+        console.log(err)
+      }
+    }
+
+
+   async function getApi2()
+   {
+    const data1 = await getApi()
+    console.log(data1)
+    
+    country.innerText = `${data1.countryName},${data1.city},${data1.continent},${data1.longitude},${data1.lookupSource}`
+   }
+  getApi2()
+
+  
+    
+</script>
