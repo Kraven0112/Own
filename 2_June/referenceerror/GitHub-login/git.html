@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>github-login</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #5d3131;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        flex-direction: column;
+      }
+      .main-box {
+        width: 265px;
+        height: auto;
+        border: 1px solid;
+        border-radius: 5px;
+        
+      }
+      .logo img {
+        margin: 30px 0 10px 0;
+        width: 50px;
+        height: 50px;
+        
+      }
+      .head h1 {
+        font-size: 24px;
+        margin: 10px;
+      }
+      .main-box{
+        padding: 10px;
+      }
+      .main-box .boxx{
+        padding: 6px 4px;
+      }
+      .main-box .box{
+        display: flex;
+        flex-direction: column;
+      }
+      .main-box .box button{
+        margin-top: 15px;
+        padding: 6px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(28, 90, 28);
+        color: #fff;
+      }
+      .main-box .box label{
+        margin: 6px 0px;
+        font-size: 14px;
+        color: #fff;
+      }
+      .main-box .box input{
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #948f8f;
+        background-color: #656060;
+      }
+      .container .footer{
+        width: 265px;
+        height: auto;
+        border: 1px solid;
+        margin-top: 20px;
+        padding: 18px 10px;
+        border-radius: 5px;
+      }
+      .container .footer .line1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        
+      }
+      .container .footer .line1 .sign{
+        color: rgb(20, 3, 49);
+      }
+      .container .footer .line1 .Create{
+        color: rgb(20, 3, 49);
+      }
+      .container .footer .line1 .gro{
+        font-size: 17px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./github-logo.png" alt="" />
+      </div>
+      <div class="head">
+        <h1>Sign in to GitHub</h1>
+      </div>
+      <div class="main-box">
+        <div class="box boxx">
+          <label for="">Username or email address</label>
+          <input type="text" />
+        </div>
+        <div class="box boxx">
+          <label for="">Password</label>
+          <input type="text" />
+          <div class="box">
+            <button>Sign in</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="line1">
+            <span class="sign">Sign in with a passkey</span>
+            <span class="gro">New to GitHub? <span class="Create">Create an account</span></span>
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>
