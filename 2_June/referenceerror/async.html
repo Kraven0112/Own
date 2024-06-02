@@ -1,0 +1,12 @@
+<script>
+    async function saraPromise(){
+        let saraPro = new Promise((fulfill,nff) => {
+            setTimeout(() => {
+                // fulfill ('Giving party;')
+                nff ('not giving party');
+            },2000)
+        })
+        console.log(await saraPro);
+    }
+    saraPromise()
+</script>
