@@ -1,0 +1,7 @@
+img{
+    filter: drop-shadow(10px 10px 20px rgb(209, 49, 49));
+    /* filter: saturate(100);
+    filter: hue-rotate(5);
+    filter: grayscale(20px);
+    filter: contrast(1);  */
+}
