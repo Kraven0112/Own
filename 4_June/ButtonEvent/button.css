@@ -1,0 +1,16 @@
+.container{
+    background-image: linear-gradient(60deg,red,green,blue);
+    padding:10px;
+}
+.container h1{
+    text-align: center;
+}
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+button{
+    margin:5px;
+    background-image: linear-gradient(30deg,gray,white,blue);
+}
