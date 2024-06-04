@@ -4,7 +4,7 @@ form{
     left: 50%;
     top: 30%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(60deg,rgb(48, 48, 122),rgb(205, 103, 103),rgb(12, 93, 12));
+    background-image: linear-gradient(90deg,rgb(48, 48, 122),rgb(205, 103, 103),rgb(12, 93, 12));
     border-radius: 7px;
     padding: 40px;
 }
