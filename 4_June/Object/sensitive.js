@@ -5,4 +5,3 @@ const obj ={
 }
 console.log(obj["1"])//output is c
 console.log(obj[1])//output is c
-console.log(obj[1])//output is c
