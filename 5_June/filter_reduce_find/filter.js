@@ -34,7 +34,7 @@ console.log("-----------------------")
 function getName()
 {
     const name = ["Sushil","Saliram","Dinesh","Preeti","Milan","Sabin"]
-    const data = name.filter((letter) => letter.length <6)
+    const data = name.filter((letter) => letter.length < 6)
     console.log(data)
 }
 getName()
