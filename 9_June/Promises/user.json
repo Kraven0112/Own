@@ -1,0 +1,12 @@
+{
+    "name":"Susil Chaudhay",
+    "age":"21",
+    "country":"Nepal",
+    "district":"Kanchanpur",
+    "city":"Mahendranagar",
+    "permAddress":{
+        "village":"Bhakunda",
+        "tole":"Sudarshanpur",
+        "municipality":"Belauri"
+    }
+}
