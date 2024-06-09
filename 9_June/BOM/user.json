@@ -1,0 +1,12 @@
+{
+    "name":"Sushil Chaudhary",
+        "age":"21",
+        "country":"Nepal",
+        "continent":"Asia",
+        "address":{
+            "district":"Kanchanpur",
+            "Town":"Belauri",
+            "city":"Mahendranagar",
+            "Village":"Bhakunda"
+        }
+}
