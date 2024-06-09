@@ -26,14 +26,3 @@ console.log(cityKeys)
 const cityValues = Object.values(city)
 console.log(cityValues)
 
-//from direct object
-const obj1 = {
-  "name1": "Kiran",
-  "name2": "Kailash",
-  "name3": "groot"
-}
-const arrObj = Array.from(obj1)
-console.log(arrObj.map((element,index,array)=>{
-    // console.log(element)
-    console.log(index)
-}))
