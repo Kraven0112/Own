@@ -1,0 +1,25 @@
+body{
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+}
+p{
+    font-size: 25px;
+}
+p::before{
+    content:"# ";
+    color: red;
+    font-size: 25px;
+}
+p span{
+    vertical-align:sub;
+    font-size: medium;
+}
+code{
+    font-size: 25px;
+}
+code::before{
+    content:"# ";
+    color: red;
+    font-size: 25px;
+}
