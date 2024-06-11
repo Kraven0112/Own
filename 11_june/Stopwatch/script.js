@@ -1,12 +1,12 @@
-const timeShow = document.getElementById('show')
+let timeShow = document.getElementById('show')
 let hour = 0
 let minute = 0
 let second = 0
 let milisecond = 0
-
+let timer
 function startWatch()
 {
-    setInterval(()=>{
+  return  timer = setInterval(()=>{
         milisecond ++
         if(milisecond == 100)
             {
@@ -23,14 +23,18 @@ function startWatch()
                         }
                 }
              }
-            
+     
         timeShow.innerHTML = `${hour}:${minute}:${second}:${milisecond}`
-    },12)
+    },11)
 }
-
+function stopWatch()
+{
+  clearTimeout(timer)
+}
 function resetWatch()
 {
-   
+    clearInterval(timer)
+    timeShow.innerHTML="0:0:0:0"
 }
 
 
