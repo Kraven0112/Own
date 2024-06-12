@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        body{
+            background-color: #000000;
+            color: white;
+        }
+        p::before{
+            content: "# ";
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>append with cloneNode() method</h1>
+    <p>We can append multiple elements using append() and  but not using appendChild() method when we have used cloneNode(true) method. </p>
+    <p>we have to use for_loop for multiple append using appendChild() method.</p>
+
+    <div id="groot">
+
+    </div>
+</body>
+</html>

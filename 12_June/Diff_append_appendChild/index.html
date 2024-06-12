@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        body{
+            background-color: #000000;
+            color: white;
+        }
+        p::before{
+            content: "# ";
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Difference between append() and appendChild() without using cloneNode(true)</h1>
+    <p>append() is used to append multiple elements one time.</p>
+    <p>appendChild() is used to append only one at a single time.</p>
+
+    <h1>While using cloneNode() method</h1>
+    <p>It can be easy to append multiple elements at a single time in append() and appendChild() both.</p>
+    
+
+    <div id="groot">
+        
+    </div>
+</body>
+</html>

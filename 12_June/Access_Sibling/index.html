@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        body{
+            background-color: #000000;
+            color: white;
+        }
+        p::before{
+            content: "# ";
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Access Siblings using javascript methods.</h1>
+    <p>.nextElementSiblind is used to access next sibling which is after current element.</p>
+    <p id="current">.previousElementSibling is rsed to access previous element which is before current element.</p>
+    <p>.nextSibling is used to access text object of next element.</p>
+    <p>.previousSibling is used to access text object of previous element.</p>
+    <p>.previousElementSibling.innerHTML -- is used to access text value of previous element.</p>
+    <p>.nextElementSibling.innerHTML -- is used to access text value of next element.</p>
+</body>
+</html>
