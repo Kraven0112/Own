@@ -1,12 +1,13 @@
  .watch{
     position: absolute;
    left: 50%;
-   top: 15%;
+   top: 50%;
    transform: translate(-50%,-50%);
    border: 2px solid black;
-   width: 300px;
+   width: 400px;
    border-radius: 10px;
-   background-image: linear-gradient(30deg,gray,white,gray);
+   background-image: linear-gradient(180deg,gray,white,gray);
+   padding-bottom: 10px;
  }
  .watch h1{
   width: 100%;
@@ -16,3 +17,24 @@
  .watch #show{
   margin-top:-20px;
  }
+ #button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ #button button{
+  width: 80px;
+  height: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  border:none;
+  font-family: sans-serif;
+  font-weight: 600;
+  background-image: linear-gradient(180deg,gray,white,gray);
+  color: navy;
+ }
+ button:nth-child(2)
+ {
+  margin-inline: 25px;
+ }
+
