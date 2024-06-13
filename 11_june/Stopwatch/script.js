@@ -1,5 +1,4 @@
 let timeShow = document.getElementById('show')
-let x="00"
 let hour = 0
 let minute = 0
 let second = 0
@@ -15,6 +14,10 @@ function startWatch()
                 second++
             if(second == 60)
                 {
+                   if(second<10)
+                    {
+                        second = second < 10 ? "0"+second : second
+                    }
                     second = 0
                     minute++
                     if(minute == 60)
@@ -27,6 +30,7 @@ function startWatch()
         timeShow.innerHTML = `${hour}:${minute}:${second}:${milisecond}`
     },11)
 }
+
 function stopWatch()
 {
   clearInterval(timer) //clearing timer using clearInterval() and we can use clearTimeout
