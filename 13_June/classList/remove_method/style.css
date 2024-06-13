@@ -1,0 +1,15 @@
+.light{
+    font-size: 45px;
+}
+.dark{
+    font-family: sans-serif;
+}
+.moon{
+    font-weight: 900;
+}
+.sun{
+    background-image:linear-gradient(180deg,gray,black,gray);
+    color: white;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
