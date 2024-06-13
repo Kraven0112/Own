@@ -9,6 +9,7 @@ let timer
 start.addEventListener('click',()=>{                                                          
  return timer = setInterval(()=>{
     ms++
+    ms = ms<10? "0"+ms : ms
     if(ms==100)
         {
             ms=0
