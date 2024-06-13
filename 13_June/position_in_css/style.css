@@ -1,0 +1,25 @@
+#parent{
+    position: relative;
+    background-color: gray;
+}
+h3{
+    color: white;
+    font-size: 50px;
+}
+#first{
+    background-color: blue;
+}
+#second{
+    background-color:navy;
+}
+#third{
+    background-color:orange;
+}
+#fourth{
+    background-color:green;
+}
+h3:nth-child(4)
+{
+    position: fixed;
+    inset: 2px;
+}
