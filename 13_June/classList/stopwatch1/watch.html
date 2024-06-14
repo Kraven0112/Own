@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="timerWatch()">
+    <h1 id="display"></h1>
+    <script>
+        function timerWatch(){
+            let d = new Date();
+
+            let hrs = d.getHours();
+            let min = d.getMinutes();
+            let sec = d.getSeconds();
+
+            if(hrs > 12){
+                hrs = hrs - 12;
+            }
+
+            let session = "PM";
+            if(session < 12){ 
+                session = "AM"
+            }
+
+            hrs = hrs < 10 ? "0" +hrs : hrs;
+            min = min < 10 ? "0" +min : min;
+            sec = sec < 10 ? "0" +sec : sec;
+
+            let time = hrs + ":" + min + ":" +  sec + " " +session;
+            
+            document.getElementById('display').innerText=time;
+
+            setInterval(timerWatch,1000);
+
+        
+        }
+    </script>
+</body>
+</html>
