@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+#current{
+    width: 300px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    rotate: 360deg;
+    background-image: linear-gradient(green,blue,red);
+    transition :5s;
+}
+hr{
+    border: 2px solid white;
+}
+h1{
+    text-align: center;
+}
