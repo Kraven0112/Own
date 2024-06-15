@@ -1,19 +1,22 @@
 const show = document.querySelector('#time')
-const dayShow = document.querySelector('#day')
 const date = document.querySelector('#relate')
 
   function getTime()
   {
-    const time = new Date()
-    const hour = time.getHours()
-    const minute = time.getMinutes()
-    const second = time.getSeconds()
-    const meridiem = 'AM'
+    let time = new Date()
+    let hour = time.getHours()
+    let minute = time.getMinutes()
+    let second = time.getSeconds()
+    let meridiem = 'PM'
 
+    if(hour>12)
+      {
+        hour =hour - 12
+      }
      
     if(meridiem < 12)
         {
-        meridiem = 'PM'
+        meridiem = 'AM'
         }
       
 
