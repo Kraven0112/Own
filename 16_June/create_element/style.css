@@ -1,0 +1,40 @@
+body{
+    background-color: #242424;
+    color: #fff;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
+#munna{
+    color: green;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.munna{
+    color: blue;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: panda 4s linear infinite;
+}
+#container p{
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+@keyframes panda
+ {
+    0%{rotate: 360deg;}
+}
