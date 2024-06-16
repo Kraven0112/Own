@@ -1,0 +1,10 @@
+body{
+    background-color: #242424;
+    font-family: sans-serif;
+    color: #fff;
+}
+p::before{
+    content: "# ";
+    font-size: 25px;
+    color:red;
+}
