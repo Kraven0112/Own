@@ -7,13 +7,13 @@ body{
 }
 #message{
     width: 400px;
-    height: 200px;
     border: 2px solid green;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: none;
     color: #fff;
     box-shadow: 0px 5px 10px 5px;
+    font-family: sans-serif;
 }
 #click{
     width: 300px;
@@ -26,4 +26,12 @@ body{
     background-color: black;
     outline: none;
     box-shadow:5px 5px 10px 2px rgba(0,0,0,0.9);
+}
+#message p{
+    text-align: center;
+}
+#message p img{
+    width: 200px;
+    height: 230px;
+    border-radius: 20%;
 }
