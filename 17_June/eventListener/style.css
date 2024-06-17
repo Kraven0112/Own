@@ -1,0 +1,9 @@
+body{
+    background-color: #242424;
+    color: #fff;
+}
+p::before{
+    content: "# ";
+    font-size: 25px;
+    color: red;
+}
