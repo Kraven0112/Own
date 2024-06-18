@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+.parent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.para{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #777;
+}
+.button{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-inline:200px ;
+}
