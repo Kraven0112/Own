@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Event_bubbling and Event_capture</h1>
+    <p>event.stopPropagation() -- is used to stop bubbling or spreading in javascript.</p>
+    <p>{capture:true} -- is used to reverse bubbling or spreading in javascript.</p>
+    <p>{once:true} -- is used to bubble or spread one time only.</p>
+    <p>if{capture:true} -- bubbling or spreading will be reverse.</p>
+    <p>if{once:true} -- bubbling or spreading will happen for one time.</p>
+    <div id="parent">
+        <div id="bigger">
+            <h4 id="smaller"></h4>
+        </div>
+    </div>
+</body>
+</html>
