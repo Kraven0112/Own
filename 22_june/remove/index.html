@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+        background-color: #2424;
+        }
+        .child{
+            width: 100px;
+            height: 40px;
+            background-color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+<form action="">
+    <select id="myfruit" size="4">
+        <option>Apple</option>
+        <option>Ball</option>
+        <option>Cat</option>
+        <option>Dog</option>
+    </select>
+</form>
+
+    <button onclick="Remove()"> remove selected item</button>
+
+    <script>
+        function Remove()
+        {
+            const fruit = document.querySelector('#myfruit')
+            fruit.remove()
+        }
+        
+        //  const parent = document.createElement('div')
+        // for(let i = 1; i<=10; i++)
+        // {
+        //     const child = document.createElement('h2')
+        //     child.innerHTML = i
+        //     child.className="child"
+        //     parent.append(child)
+        //     document.body.append(parent)
+        //     child.addEventListener('click',()=>{
+        //         child.remove()
+        //     })
+        // }
+        
+    </script>
+</body>
+</html>
