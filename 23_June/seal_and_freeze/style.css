@@ -1,0 +1,12 @@
+body{
+    background-color: #2424;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
