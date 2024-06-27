@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    background-color: #2424;
+}
+.operation{
+    width: 400px;
+    height: 200px;
+    background-color: #2424;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 16px;
+}
+.operation .question{
+    width:390px;
+    height:40px;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.operation .nextBtn{
+    width: 80px;
+    height: 40px;
+    font-size: 19px;
+    border: none;
+    background-color: transparent;
+    color: blue;
+}
