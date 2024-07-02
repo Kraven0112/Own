@@ -1,0 +1,38 @@
+body{
+    background-color: #2424;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+}
+.progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 8px;
+    background-color: #f53192;
+}
+
+.progress::-webkit-slider-thumb{
+    color: #f53192;
+    width: 20px;
+    height: 20px;
+}
+.controller{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.controller button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 20px 60px rgba(255, 26, 26, 0.22);
+}
