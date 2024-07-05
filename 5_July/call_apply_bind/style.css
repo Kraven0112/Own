@@ -1,0 +1,30 @@
+body{
+    background-color: #2424;
+    font-family: monospace;
+}
+p{
+    font-size: 18px;
+}
+p::before{
+    content: "# ";
+    color: red;
+    font-size: 25px;
+}
+
+div ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style-type: none;
+}
+
+ul li{
+    font-family:serif;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
