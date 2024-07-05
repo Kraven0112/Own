@@ -31,3 +31,25 @@ makeHttpRequest("GET", `https://dummyjson.com/users`, (userData) => {
     })
   })
 })
+
+
+const grandParent = document.querySelector('#grandparent')
+const parent = document.querySelector('#parent')
+const child = document.querySelector('#child')
+
+grandParent.addEventListener('click',(event)=>{
+    console.log("Grandparent is clicked")
+    event.stopPropagation()
+},true)
+
+parent.addEventListener('click',(event)=>{
+    console.log("parent is clicked")
+},true)
+
+child.addEventListener('click',(event)=>{
+    console.log("child is clicked")
+},true)
+
+
+// false --> means event bubbling. It is default value of .
+// true --> means event capturing . opposite of event bubbling

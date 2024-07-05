@@ -10,3 +10,9 @@ p::before{
     color: red;
     font-size: 25px;
 }
+div{
+    min-width: 100px;
+    min-height: 100px;
+    border: 2px solid #000;
+    padding: 30px;
+}
