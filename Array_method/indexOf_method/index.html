@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Enter name please" class="nameinput">
+        <button type="button" class="submitBtn"> Submit</button>
+        <p class="news"></p>
+    </form>
+
+
+    <script>
+
+
+        const paragraph = "Hello! sad dog is looking cuter than happy dog."
+        const searchTerm = "dog"
+
+        const indexOfFirstDog = paragraph.indexOf(searchTerm)
+
+        const indexOfSecondDog = paragraph.indexOf(searchTerm,indexOfFirstDog+1)
+
+        console.log(indexOfFirstDog)
+        console.log(indexOfSecondDog)
+
+        const message = document.querySelector('.news')
+        const inputValue = document.querySelector('.nameinput')
+        const Btn = document.querySelector('.submitBtn')
+
+        const username = "Sushil Chaudhary"
+
+
+        Btn.addEventListener('click',()=>{
+            const validation = username.indexOf("Sushil")
+            console.log(validation)
+        })
+
+
+    </script>
+</body>
+</html>
