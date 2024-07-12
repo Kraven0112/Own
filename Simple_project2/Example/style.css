@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+:where(h1){
+    color: blue;
+}
+:where(h2){
+    color: rgb(14, 149, 149);
+}
+:where(h3){
+    color: brown;
+    font-size: 40px;
+}
+:where(span){
+    color:navy;
+    font-size: 40px;
+}
+:where(p){
+    color: blueviolet;
+    font-size: 40px;
+}
