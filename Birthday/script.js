@@ -3,7 +3,9 @@ let image = document.querySelector('.image')
 let getmsgBtn = document.querySelector('.getmsg')
 let mainmsg = document.querySelector('.title')
 let secondMsg = document.querySelector('.message')
+let playBtn = document.querySelector('.playBtn')
 let num = 0
+let song = new Audio('./birthdaysong.mp3.mp3')
 const imagArray=[
     'https://cdnjs.angroos.com/wp-content/uploads/2024/01/DALL%C2%B7E-2024-01-18-17.07.28-A-realistic-birthday-greeting-card-featuring-a-vibrant-celebratory-background.-In-the-center-_Happy-Birthday_-is-written-in-elegant-cursive-script.jpg',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_mAAAG43otryBJPwT1akDKFy0Fc0QmrzQwBa8rUcHQVbqFFP_Y996DunbDyutEK3y0E&usqp=CAU',
@@ -32,5 +34,10 @@ getmsgBtn.addEventListener('click',()=>{
     mainmsg.style.visibility = "visible"
     parent.style.visibility = "visible"
     secondMsg.style.visibility="visible"
+    playBtn.style.visibility="visible"
     setInterval(birthday,3000)
+})
+
+playBtn.addEventListener('click',()=>{
+song.paused ? song.play() : song.pause()
 })
