@@ -5,4 +5,4 @@
     city:"Mahendranagar"
 }
 const animal=["Cat","Dog","Cow","Buffalo","Goat"]
-export{user,animal}
+export{user,animal}//named export
