@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+}
+.maindetail > summary{
+    font-size: 25px;
+    list-style: none;
+    font-weight: 700;
+    width: 150px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 16px;
+    background-color: #22dfd0;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    font-weight: 700;
+    list-style-type: none;
+    position: absolute;
+    top: 15px;
+    left: 120px;
+    font-family: cursive;
+}
+.box>li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box>li:hover{
+    background-color: grey;
+    color: #fff;
+}
