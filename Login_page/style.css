@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #242424;
+}
+.title{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background-image: linear-gradient(50deg,navy,pink);
+}
+.main{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 15px;
+}
+.username{
+    width: 100%;
+    margin-top: 22px;
+    padding-inline: 10px;
+}
+.password{
+    width: 100%;
+    margin-top: 40px;
+    padding-inline: 10px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    padding-left: 4px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    font-size: 21px;
+}
+.forget{
+    margin-top: 25px;
+    padding-left: 12px;
+    font-size: 20px;
+    color: blue;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button button{
+    width:100%;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgb(43, 173, 160);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.message{
+    margin-top: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign{
+    color: blue;
+}
+.error{
+    color: red;
+    padding-left: 10px;
+    font-size: 17px;
+    visibility: hidden;
+}
+@media(min-width:340px) and (max-width:768px){
+    .container{
+        width: 100%;
+        height:600px;
+        padding: 30px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .main{
+        width: 100%;
+    }
+}
