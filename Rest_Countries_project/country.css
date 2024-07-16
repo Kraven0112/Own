@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.button{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.button button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+}
