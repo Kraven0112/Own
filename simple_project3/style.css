@@ -77,3 +77,9 @@ input{
 .support a{
     text-decoration-line: none;
 }
+@media(min-width:320px) and (max-width:768px){
+    .container{
+        width: 100%;
+        margin-top: 100px;
+    }
+}
