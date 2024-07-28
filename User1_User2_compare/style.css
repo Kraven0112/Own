@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    max-width: 670px;
+    width: 500px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
