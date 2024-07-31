@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(143, 143, 241);
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    color: navy;
+    margin-top: 50px;
+}
+.container{
+    width: 400px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+#input{
+    width:350px;
+    height: 40px;
+    font-size:1.2rem;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: navy;
+}
+#speaker{
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+}
+#speaker:hover{
+    background-color: navy;
+    color: #fff;
+}
+#input:hover{
+    background-color: navy;
+    color: #fff;
+}
