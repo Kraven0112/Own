@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:bolder;
+    background-image: url(./waterfall.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body{
+    font-family: sans-serif;
+    background-color: #8cc0ce;
+}
+.container{
+    /* background-color: navy; */
+    /* margin-inline-start: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    background-color:navy;
+    padding:30px ;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px 10px rgba(3, 4, 75, 0.39);
+}
+.container form input{
+    width:50px;
+    height: 50px;
+    background-color: navy;
+    border-radius: 10px;
+    color:white;
+    margin: 3px;
+}
+.container form .result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 4rem; */
+}
+.container form .result input{
+    outline: none;
+    text-align: end;
+    width:230px ;
+    font-size: 1.5rem;
+
+}
+.container form .fifth .equal{
+    width:108px;
+}
+.container form .operator{
+    font-size:1.2rem;
+}
+.container form .number{
+    font-size: 1.2rem;
+}
+.container form .operator,.number{
+    box-shadow: 5px 5px 5px 0px rgba(4, 10, 56, 0.39) ;
+}
