@@ -130,7 +130,7 @@ a{
     display: flex;
     align-items: first baseline;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
 }
 .footercontent  span {
     font-size: 20px;
@@ -162,7 +162,7 @@ a{
         width: 100%;
     }
 }
-@media(min-width:345px) and (max-width:768px){
+@media(min-width:345px) and (max-width:668px){
     .items{
         display: none;
     }
@@ -175,8 +175,11 @@ a{
     .carol-img{
         height: 300px;
     }
+    .footercontent{
+        gap: 10px;
+    }
 }
-@media(min-width:769px){
+@media(min-width:669px){
     .footercontent{
         gap: 200px;
     }
