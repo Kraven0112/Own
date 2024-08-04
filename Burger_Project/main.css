@@ -105,6 +105,57 @@ a{
 .image-card h2{
     margin: 0;
 }
+.myfooter{
+    width: 100%;
+    margin-block: 20px;
+    margin-inline: auto;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+}
+.footerlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerlogo img{
+    width: 150px;
+    margin-top: 10px;
+}
+.myhr{
+    border: 1px solid #163ec5;
+}
+.footercontent{
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 40px;
+}
+.footercontent  span {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration-line:underline;
+    display: block;
+    margin-bottom: 7px;
+    color: greenyellow;
+}
+
+.footercontent ul li{
+    list-style-type: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.footercontent li:hover{
+    color: #163ec5;
+}
+
+.footercontent li::before{
+    content: "*";
+    font-size: 20px;
+    margin-right: 10px;
+    color: red;
+}
 
 @media(min-width:320px) and (max-width:600px){
     .image-card{
@@ -123,5 +174,10 @@ a{
     }
     .carol-img{
         height: 300px;
+    }
+}
+@media(min-width:769px){
+    .footercontent{
+        gap: 200px;
     }
 }
