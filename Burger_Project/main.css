@@ -130,7 +130,7 @@ a{
     display: flex;
     align-items: first baseline;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
 }
 .footercontent  span {
     font-size: 20px;
