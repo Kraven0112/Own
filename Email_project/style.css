@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: navy;
+}
+.container{
+    width: 500px;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-top: 30px;
+    padding: 10px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+form h3{
+    color: #fff;
+    font-weight: 800;
+}
+form button{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+}
+form input{
+    height: 40px;
+}
+form textarea{
+    padding: 10px;
+}
+input::placeholder, textarea::placeholder{
+    font-size: 18px;
+}
