@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.title{
+    color: blueviolet;
+}
+.container{
+    width: 450px;
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+ hr{
+    border: 2px solid blueviolet;
+    width: 150px;
+    margin-top: 0;
+}
+.mainpart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    padding: 10px 10px 20px;
+    border-radius: 5px;
+}
+.mainpart img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#myname,#job,#review{
+    margin-top: 10px;
+}
+#job{
+    color: brown;
+    font-size: 17px;
+}
+#myname{
+    color: blueviolet;
+    font-size: 19px;
+}
+#review{
+    text-wrap: wrap;
+}
+.buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.buttons button{
+    width: 60px;
+    height: 30px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius:8px;
+}
+.bottom{
+    margin-top: 20px;
+    width: 300px;
+}
