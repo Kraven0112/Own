@@ -55,22 +55,46 @@ let myname = document.querySelector('#myname strong')
 let job = document.querySelector('#job strong')
 let review = document.querySelector('#review')
 let myimage = document.querySelector('#myimg')
+let nextBtn = document.querySelector('.next')
+let prevBtn = document.querySelector('.prev')
+let randomBtn = document.querySelector('.random')
 
+//global variable
 let num = 0;
 
-function getreview(){
-    if(num == nameArray.length){
-        num = 0
-    }else{
-        myimage.src = imgArray[num]
-        myname.innerHTML = nameArray[num]
-        job.innerHTML = jobArray[num]
-        review.innerHTML = reviewArray[num]
-        
-        num++
-    }
+//window object
+window.addEventListener('DOMContentLoaded',()=>{
+    getreview()
+})
+
+//getreview function
+function getreview () {
+    myimage.src = imgArray[num]
+    myname.innerHTML = nameArray[num]
+    job.innerHTML = jobArray[num]
+    review.innerHTML = reviewArray[num]  
 }
 
-setInterval(()=>{
+//nextBtn 
+nextBtn.addEventListener('click',()=>{
+    num++
+    if(num > imgArray.length-1){
+        num = 0
+    }
     getreview()
-},5000)
+})
+
+//prevBtn
+prevBtn.addEventListener('click',()=>{
+    num--
+    if(num < 0){
+        num = imgArray.length-1
+    }
+    getreview()
+})
+
+//randomBtn
+randomBtn.addEventListener('click',()=>{
+    num = Math.floor(Math.random()*10)
+    getreview()
+})
