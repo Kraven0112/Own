@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #242424;
+    color: #fff;
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+li{
+    list-style-type:none ;
+    color: inherit;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.side-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.user .user-img{
+    width: 50px;
+    height: 50px;
+}
+.major-container{
+    width: 100%;
+}
+.ul-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.ul-container span{
+margin-right: 10px;
+}
