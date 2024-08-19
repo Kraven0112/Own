@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100dvh;
+    background-image: url(./cody-scott-milewski-aCnkRlBD0i4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+    letter-spacing: 2px;
+}
+li{
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+.container{
+    width: 100%;
+    color: #fff;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-title{
+    margin-right: auto;
+}
+.nav-title::first-letter{
+    font-size: 32px;
+    color: rgb(44, 238, 238);
+    font-family: cursive;
+}
+.ul-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ul-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ul-list li a{
+    padding-inline: 20px;
+    font-size: 17px;
+}
+.explore{
+    color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.explore h2{
+    text-align: center;
+    letter-spacing:2px;
+    font-size: 32px;
+}
+.explore .click{
+    padding:10px 30px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.menu-icon{
+    font-size: 20px;
+    display: none;
+}
+@media(min-width:345px) and (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    .ul-list{
+        display: none;
+    }
+}
