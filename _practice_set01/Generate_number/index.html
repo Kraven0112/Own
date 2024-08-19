@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        .container{
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            margin-inline: auto;
+        }
+        input{
+            width:300px;
+            height: 30px;
+            font-size: 18px;
+            outline: none;
+        }
+        #generate{
+            width: 110px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        #output{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter no. of number" id="input">
+        <button id="generate">generate</button>
+        <p id="output"></p>
+    </div>
+</body>
+</html>
