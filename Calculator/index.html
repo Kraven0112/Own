@@ -46,7 +46,7 @@
                 <input type="button" value="00" class="number" onclick="result.value += '00'">
                 <input type="button" value="0" class="number" onclick="result.value += 
                 '0'">
-                <input type="button" value="=" class="equal operator" onclick="result.value = result.value =eval(String(result.value))">
+                <input type="button" value="=" class="equal operator" onclick="result.value = eval(String(result.value)) || ('')">
             </div>
             
         </form>
